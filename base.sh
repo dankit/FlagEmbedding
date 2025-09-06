@@ -22,5 +22,6 @@ exec torchrun --nproc_per_node 1 \
     --warmup_ratio 0.1 \
     --weight_decay 0.01 \
     --logging_steps 200 \
-    --save_steps 500 \
+	--deepspeed ds_stage0.json \
+    --save_steps 250 \
     --save_total_limit 3
